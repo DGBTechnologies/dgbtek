@@ -219,30 +219,30 @@
       <div class="sm-divider-line" ></div>
     </div>
     <div class="row">
-		      <div class="col-sm">
-      
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1700.5380627288164!2d74.438580031857!3d31.52206907135573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190f3c5e09c86b%3A0x34a369bdf93083af!2sInvent+Forces+Pvt.+Ltd!5e0!3m2!1sen!2s!4v1565067250834!5m2!1sen!2s" width="530" height="310" frameborder="0" style="border:0; border-radius: 5px; padding-bottom: 10px; padding-left: 5px; margin-top: 15px;" allowfullscreen></iframe>
-        
+      <div class="col-sm">  
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1700.5380627288164!2d74.438580031857!3d31.52206907135573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190f3c5e09c86b%3A0x34a369bdf93083af!2sInvent+Forces+Pvt.+Ltd!5e0!3m2!1sen!2s!4v1565067250834!5m2!1sen!2s" width="530" height="310" frameborder="0" style="border:0; border-radius: 5px; padding-bottom: 10px; padding-left: 5px; margin-top: 15px;" allowfullscreen></iframe>    
       </div>
-      <div class="col-sm">
-        <div class="row">
-            <input class="input-field" type="text" placeholder="Enter Subject" />
- 		</div>
-        <div class="row">
-		  <div class="col-sm">
-            <input class="input-field" type="email" placeholder="Enter your Email" />
+      <form id="javascript_form">
+        <div class="col-sm">
+          <div class="row">
+            <input class="input-field" type="text" placeholder="Enter Subject" name="userSubject"/>
           </div>
-          <div class="col-sm">
-            <input class="input-field" type="text" placeholder="Enter your Name" />
+          <div class="row">
+            <div class="col-sm">
+              <input class="input-field" type="email" placeholder="Enter your Email" name="userEmail"/>
+            </div>
+            <div class="col-sm">
+              <input class="input-field" type="text" placeholder="Enter your Name" name="userName"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <input class="input-field-des" type="text" placeholder="Enter your message here!" name="userMessage"/>
+              <div class="round-button"> <a href="#myModal" class="trigger-btn" data-toggle="modal" type="submit" id="js_send"> <img src="images/send-ic.png" alt="Home" /> </a> </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <input class="input-field-des" type="text" placeholder="Enter your message here!" />
-            <div class="round-button"> <a href="#myModal" class="trigger-btn" data-toggle="modal"> <img src="images/send-ic.png" alt="Home" /> </a> </div>
-          </div>
-        </div>
-      </div>
+      </form>
     </div>
   </div>
   
@@ -334,5 +334,74 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
 <script type="text/javascript" src="js/main.js"></script>
+<!-- Code to send email from contact form -->
+<script>
+  //update this with your js_form selector
+  var form_id_js = "javascript_form";
+
+  var data_js = {
+      "access_token": "{jnhtikq43qqq15mvpgrrs4db}" // sent after you sign up
+  };
+
+  function js_onSuccess() {
+      // remove this to avoid redirect
+      window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+  }
+
+  function js_onError(error) {
+      // remove this to avoid redirect
+      window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+  }
+
+  var sendButton = document.getElementById("js_send");
+
+  function js_send() {
+      sendButton.value='Sending…';
+      sendButton.disabled=true;
+      var request = new XMLHttpRequest();
+      request.onreadystatechange = function() {
+          if (request.readyState == 4 && request.status == 200) {
+              js_onSuccess();
+          } else
+          if(request.readyState == 4) {
+              js_onError(request.response);
+          }
+      };
+
+      var subject = document.querySelector("#" + form_id_js + " [name='userEmail']").value + " | " + document.querySelector("#" + form_id_js + " [name='userSubject']").value;
+      var message = "From:\t" + document.querySelector("#" + form_id_js + " [name='userName']").value;
+      message += "Email:\t" + document.querySelector("#" + form_id_js + " [name='userEmail']").value;
+      message += "Message:\n" + document.querySelector("#" + form_id_js + " [name='userMessage']").value;
+      data_js['subject'] = subject;
+      data_js['text'] = message;
+      var params = toParams(data_js);
+
+      request.open("POST", "https://postmail.invotes.com/send", true);
+      request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+      request.send(params);
+
+      return false;
+  }
+
+  sendButton.onclick = js_send;
+
+  function toParams(data_js) {
+      var form_data = [];
+      for ( var key in data_js ) {
+          form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+      }
+
+      return form_data.join("&");
+  }
+
+  var js_form = document.getElementById(form_id_js);
+  js_form.addEventListener("submit", function (e) {
+      e.preventDefault();
+  });
+</script>
+
+
+
 </body>
 </html>
