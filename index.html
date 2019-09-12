@@ -230,8 +230,13 @@
           <div class="row">
             <div class="col-sm">
               <input class="input-field-des" type="text" placeholder="Enter your message here!" name="userMessage"/>
-              <!-- <div class="round-button"> <a href="#myModal" class="trigger-btn" data-toggle="modal" type="submit" id="js_send"> <img src="images/send-ic.png" alt="Home" /> </a> </div> -->
-              <div class="round-button"> <a class="trigger-btn" data-toggle="modal" type="submit" id="js_send"> <img src="images/send-ic.png" alt="Home" /> </a> </div>
+              <!-- <div class="round-button"> <a href="#myModal" class="trigger-btn" data-toggle="modal" type="submit" id="js_send"> <img src="images/send-ic.png" alt="Home" /> </a> </div>
+              <div class="round-button"> <a class="trigger-btn" data-toggle="modal" type="submit" id="js_send"> <img src="images/send-ic.png" alt="Home" /> </a> </div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <button class="btn btn-success" id="js_send">Submit</button>
             </div>
           </div>
         </div>
@@ -352,7 +357,7 @@
   var sendButton = document.getElementById("js_send");
 
   function js_send() {
-      sendButton.value='Sending…';
+      // sendButton.value='Sending…';
       sendButton.disabled=true;
       var request = new XMLHttpRequest();
       request.onreadystatechange = function() {
@@ -366,8 +371,8 @@
 
       var subject = document.querySelector("#" + form_id_js + " [name='userEmail']").value + " | " + document.querySelector("#" + form_id_js + " [name='userSubject']").value;
       var message = "From:\t" + document.querySelector("#" + form_id_js + " [name='userName']").value;
-      message += "Email:\t" + document.querySelector("#" + form_id_js + " [name='userEmail']").value;
-      message += "Message:\n" + document.querySelector("#" + form_id_js + " [name='userMessage']").value;
+      message += "\nEmail:\t" + document.querySelector("#" + form_id_js + " [name='userEmail']").value;
+      message += "\nMessage:\n" + document.querySelector("#" + form_id_js + " [name='userMessage']").value;
       data_js['subject'] = subject;
       data_js['text'] = message;
       var params = toParams(data_js);
