@@ -801,3 +801,25 @@ footer .container .row .col-sm .sm-icons {
 top: 0%;
 }
 */
+.table {
+	font-size: 1.25rem;
+	text-align: justify;
+	padding: 1.5rem;
+	border: none;
+	border-width: 0rem;
+}
+
+.table tr{
+	border: none;
+	border-width: 0rem;
+}
+
+.table th{
+	border: none;
+	border-width: 0rem;
+}
+
+.table td{
+	border: none;
+	border-width: 0rem;
+}
