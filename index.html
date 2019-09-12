@@ -230,7 +230,8 @@
           <div class="row">
             <div class="col-sm">
               <input class="input-field-des" type="text" placeholder="Enter your message here!" name="userMessage"/>
-              <div class="round-button"> <a href="#myModal" class="trigger-btn" data-toggle="modal" type="submit" id="js_send"> <img src="images/send-ic.png" alt="Home" /> </a> </div>
+              <!-- <div class="round-button"> <a href="#myModal" class="trigger-btn" data-toggle="modal" type="submit" id="js_send"> <img src="images/send-ic.png" alt="Home" /> </a> </div> -->
+              <div class="round-button"> <a class="trigger-btn" data-toggle="modal" type="submit" id="js_send"> <img src="images/send-ic.png" alt="Home" /> </a> </div>
             </div>
           </div>
         </div>
@@ -337,12 +338,15 @@
 
   function js_onSuccess() {
       // remove this to avoid redirect
-      window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+      // window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+      $('#myModal').modal('toggle');
+
   }
 
   function js_onError(error) {
       // remove this to avoid redirect
-      window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+      // window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+      window.alert("ERROR: Could not send email:\n" + error);
   }
 
   var sendButton = document.getElementById("js_send");
