@@ -603,6 +603,9 @@ footer .container p.copyrights{
 	#our-clients .row img.jade-crop-img {
 		width: 90px !important;
 	}
+	#our-clients .row img.askari-img {
+		width: 90px !important;
+	}
 	.round-button {
 		bottom: -11%;
 	}
@@ -747,6 +750,9 @@ footer .container p.copyrights{
 		width: 70px !important;
 	}
 	#our-clients .row img.jade-crop-img {
+		width: 90px !important;
+	}
+	#our-clients .row img.askari-img {
 		width: 90px !important;
 	}
 	.round-button {
