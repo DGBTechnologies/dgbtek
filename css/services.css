@@ -196,7 +196,7 @@ section .pki-section{
 }
 section .bbai-section, section .pki-section {
 	padding-top: 25px;
-	padding-bottom: 72px;
+	padding-bottom: 30px;
 }
 section .pki-section {
 	margin-left: 8%;
@@ -214,14 +214,15 @@ section .bt-section {
 .bt-service-img, .bbai-service-img, 
 .pki-service-img{
 	margin-top: 10%;
-	margin-left: 35%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .bt-service-img {
 	margin-top: 5%;
 }
 
 .container .csi-body {
-	width: 72%;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
