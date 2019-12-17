@@ -95,7 +95,8 @@ display: inline;
 
 
 header .main-header {
-	width: 100%;
+	position: relative;
+	text-align: center;
 }
 
 .overlay {
@@ -150,11 +151,9 @@ header .main-header {
 	line-height: 3.50rem;
 	color: #4D5360;
 	position: absolute;
-    top: 37%;
-    left: 33%;
-    transform: translateX(-67%) translateY(-63%);
+    top: 70%;
+    left: 5%;
 	z-index: 3;
-
 }
 
 .main-title .thin {
@@ -180,45 +179,21 @@ section{
 }
 
 
-
-section .csi-section, section .fs-section,
-section .pac-section, section .bt-section, section .bbai-section,
-section .pki-section {
-	padding-top: 120px;
-	padding-bottom: 100px;
-	text-align: left;	
+section .service-section {
 	min-width: 100% !important;
 	background-color: #F9FBFF;
 }
-section .bt-section, section .bbai-section,
-section .pki-section{
-	background-color: #FFFFFF;
-}
-section .bbai-section, section .pki-section {
-	padding-top: 25px;
-	padding-bottom: 30px;
-}
-section .pki-section {
-	margin-left: 8%;
-}
-section .bt-section {
-	margin-left: -5%;
+
+.csi-body p {
+	text-align: justify;
 }
 
-.csi-service-img,.fs-service-img,
-.pac-service-img{
-	margin-top: 100px;
-	margin-left: -50px;
-}
-
-.bt-service-img, .bbai-service-img, 
-.pki-service-img{
-	margin-top: 10%;
-	margin-left: auto;
-	margin-right: auto;
-}
-.bt-service-img {
-	margin-top: 5%;
+.service-img
+{
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 70%;
+	height: auto;
 }
 
 .container .csi-body {
