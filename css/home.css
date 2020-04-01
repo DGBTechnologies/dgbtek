@@ -212,6 +212,7 @@ section .container a{
 	text-align: center;
 	text-decoration: none;
 	margin-bottom: 10px;
+	height: 240px;
 }
 
 .card-body{
@@ -280,7 +281,7 @@ section .container a{
 }
 
 .center.container .services-header {
-	width: 80%;
+	width: 100%;
 	margin-bottom: 50px;
 	margin-right: auto;
 	margin-left: auto;
