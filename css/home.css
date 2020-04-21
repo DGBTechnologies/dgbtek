@@ -160,7 +160,7 @@ section{
 }
 
 section .container{
-	padding-top: 82px;
+	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: left;
 	max-width: 80%;
@@ -202,6 +202,20 @@ section .container a{
 	text-decoration: none;
 }
 
+.service-img
+{
+	width: 100%;
+	height: auto;
+	margin-bottom: 5%;
+}
+
+h6 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #4D5360;
+	text-align: left;
+}
 
 
 .card {
@@ -285,7 +299,6 @@ section .container a{
 	margin-bottom: 50px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 5%;
 }
 .center.container .services-header .sm-divider-line {
 	margin-right: auto;

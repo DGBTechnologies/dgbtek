@@ -161,6 +161,17 @@ section{
 	padding: 0px 0px 25px 42px; 
 
 }
+
+.row h1 {
+	color: #363636;
+   	font-size: 1.7em;
+	line-height: 90px;
+	font-weight: bold;
+	   text-align: center;
+	   padding: 0px 0px 0px 15px;
+
+}
+
 .card-body {
 	padding: 2.2rem 2.1rem 3.8rem 2.1rem;
 }
@@ -262,6 +273,33 @@ footer .container p.copyrights{
 	width: 110%;
 }
 
+section p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.70rem;
+	color: #838fae;
+	text-align: justify;
+}
+
+section li{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.70rem;
+	color: #838fae;
+	text-align: justify;
+	margin-left: 40px;
+}
+
+
+.service-img
+{
+	width: 100%;
+	height: auto;
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
 
 /*
 footer .container .row .col-sm .sm-icons {
