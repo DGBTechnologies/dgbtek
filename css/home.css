@@ -167,9 +167,8 @@ section .container{
 }
 .container .services-header {
 	width: 80%;
-	margin-bottom: 50px;
 	margin-right: auto;
-	margin-top: 5%;
+	margin-top: 2%;
 }
 .container .services-header h3 {
 	font-family: 'Poppins', sans-serif;
@@ -181,9 +180,9 @@ section .container{
 
 .container .services-header p {
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.0rem;
-	font-weight: 400;
-	line-height: 1.60rem;
+	font-size: 0.9rem;
+	font-weight: 300;
+	line-height: 1.40rem;
 	color: #838fae;
 
 }
@@ -210,6 +209,7 @@ section .container a{
 }
 
 h6 {
+	padding-top: 15px;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.1rem;
 	font-weight: 500;
@@ -285,10 +285,7 @@ h6 {
 .sm-divider-line{
 	width: 20%;
 }
-#our-leadership{
- padding-top: 50px;
-	padding-bottom: 86px;
-}
+
 .center.container{
 	text-align: center;
 	max-width: 80%;
@@ -296,7 +293,6 @@ h6 {
 
 .center.container .services-header {
 	width: 100%;
-	margin-bottom: 50px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -315,11 +311,7 @@ h6 {
 	line-height: 1.7rem;
 	color: #595959;
 }
-#our-leadership .row .col-sm p {
-	font-size: 0.9rem;
-	font-weight: 400;
-	
-}
+
 #our-clients {
 	 padding-top: 46px;
 	padding-bottom: 96px;
@@ -566,8 +558,12 @@ footer .container p.copyrights{
 	}
 
 	.container .services-header p {
-	font-size: 0.70rem;
-	line-height: 1.20rem;
+		font-family: 'Poppins', sans-serif;
+		font-size: 0.9rem;
+		font-weight: 300;
+		line-height: 1.40rem;
+		color: #838fae;
+	
 	}
 	.divider-line {
 		margin: 0.40rem 1.0rem 0.88rem 0.2rem;
@@ -715,8 +711,12 @@ footer .container p.copyrights{
 	}
 
 	.container .services-header p {
-	font-size: 0.80rem;
-	line-height: 1.41rem;
+		font-family: 'Poppins', sans-serif;
+		font-size: 0.9rem;
+		font-weight: 300;
+		line-height: 1.40rem;
+		color: #838fae;
+	
 	}
 	.divider-line {
 		margin: 0.40rem 1.0rem 0.88rem 0.2rem;
