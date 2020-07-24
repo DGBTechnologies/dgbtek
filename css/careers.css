@@ -17,60 +17,15 @@ body {
 
 }
 
-
-.navbar{
-	padding: 15px 120px 10px 120px;
-	transition: 0.4s;
-	background-image: linear-gradient(180deg, rgba(12, 66, 108, 0.6)  0%, rgba(69, 129, 216, 0.02) 100%);
-	position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 99;
-	
-}
-
-.navbar.compressed {
-  padding: 5px 90px 0px 90px;
-	background-image: #EBEFF2;  
-	background-image: linear-gradient(90deg, #FFFFFF  0%, #FFFFFF 100%);
-  color: #333434;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-}
-.navbar-light .navbar-nav .nav-link {
-  color: #FFFFFF;
-	margin-right: 5px;
-	transition: all 0.2s ease-in-out;
-}
-.navbar-light .navbar-nav .nav-link.compressed{
-  color: #333434;
-	margin-right: 5px;
-	transition: all 0.2s ease-in-out;
-}
-.navbar-light .navbar-nav .nav-link:hover {
-  transform: scale(1.1);
-  color: aquamarine;
-}
-
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #FFFFFF;
-}
-
-.nav-item.active .nav-link.compressed {
-	color: #333434;
-}
-
-
-
 .large-header {
-   position: relative;
+  position: relative;
    width: 100%;
    background: #111;
    overflow: hidden;
    background-size: cover;
    background-position: center center;
    z-index: 1;
-	max-height: 380px !important;
-	text-align: center;
+	max-height: 600px !important;
 }
 
 /*
@@ -138,10 +93,10 @@ section{
 
 	margin-top: 1%;
 	padding: 50px 0px;
-	background-color: #FAFAFA;
+	background-color: white;
 	border-radius: 10px;
 	z-index: -5;
-	width: 100%;
+	width: 80%;
 
 /*
 	position: relative;
@@ -151,15 +106,25 @@ section{
 */
 }
 
-.row h2 {
-	color: #363636;
-   	text-transform: uppercase;
-   	font-size: 1.2em;
-	line-height: 70px;
-   	letter-spacing: 0.1em;
+.container section h3 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.18rem;
+	font-weight: 700;
+	line-height: 2.2rem;
+	color: #4D5360;
 	text-align: center;
-	padding: 0px 0px 25px 42px; 
+}
 
+.container section .sm-divider-line
+{
+	width: 20%;
+	height: 3px;
+	margin:1.5rem 1.0rem 1.3rem 0.2rem;
+	border-radius: 5px;
+    background: linear-gradient(#0080EF 0%, #00ACFF 100%);
+	margin-right: auto;
+	margin-left: auto;
+	width: 18%
 }
 
 .row h1 {
@@ -167,8 +132,8 @@ section{
    	font-size: 1.7em;
 	line-height: 90px;
 	font-weight: bold;
-	   text-align: center;
-	   padding: 0px 0px 0px 15px;
+	text-align: center;
+	padding: 0px 0px 0px 15px;
 
 }
 
@@ -212,84 +177,29 @@ section{
 }
 
 
-
-footer{
-	width: 100%;
-	background-color: #021744;
-	margin-top: 50px;
-	background-image: url("../images/footer-watermark.png");
-	  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-	padding: 120px 20px 40px 20px;
-}
-
-footer .container .row {
-	text-align: left;
-	left: 2%;
-}
-footer .container .row p,
-footer .container .row h5,
-footer .container .row a{
-	font-family: 'Poppins', sans-serif;
-	font-size: 0.88rem;
-	font-weight: normal;
-	line-height: 1.50rem;
-	color: #8C9DBB;
-	transition: all 0.2s ease-in-out;
-}
-
-footer .container .row p,
-footer .container .row  h5,
-footer .container .row a{
-  transform: scale(1.02);
-  color: #8C9DBB;
-}
-
-footer .container .row  h5{
-	color: azure;
-	font-size: 0.96rem;
-	font-weight: 500;
-	padding-bottom: 1px;
-}
-
-footer .container p.copyrights{
-	
-	font-family: 'Poppins', sans-serif;
-	font-size: 0.88rem;
-	font-weight: normal;
-	line-height: 1.50rem;
-	color: #8C9DBB;
-	padding:15px;
-	z-index: 1;
-}
-
-.footer-contact img {
-	display: inline-block;
-	float: left;
-}
-.footer-contact .para {
-	margin-left: 30px;
-	width: 110%;
-}
-
 section p {
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.1rem;
-	font-weight: 400;
-	line-height: 1.70rem;
+	font-size: 0.9rem;
+	font-weight: 300;
+	line-height: 1.40rem;
 	color: #838fae;
-	text-align: justify;
 }
 
 section li{
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.1rem;
-	font-weight: 400;
-	line-height: 1.70rem;
+	font-size: 0.9rem;
+	font-weight: 300;
+	line-height: 1.40rem;
 	color: #838fae;
-	text-align: justify;
-	margin-left: 40px;
+}
+
+section h5{
+	padding-top: 15px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #4D5360;
+	text-align: left;
 }
 
 
@@ -300,6 +210,8 @@ section li{
 	margin-top: 2%;
 	margin-bottom: 5%;
 }
+
+
 
 /*
 footer .container .row .col-sm .sm-icons {
