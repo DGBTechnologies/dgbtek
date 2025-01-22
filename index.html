@@ -1,632 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DGB Technologies</title>
-  <link rel="icon" href="images/title.png" type="image/png type">
-  
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/home.css" rel="stylesheet">
-  <link href="css/header.css" rel="stylesheet">
-  <link href="css/footer.css" rel="stylesheet">
-  <link href="css/More-Less.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/animate.css-master/animate.min.css">
-  <link rel="stylesheet" href="css/fakeLoader.js-master/dist/fakeLoader.min.css">
-  <link
-    href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DGB Technologies</title>
+		<link rel="icon" type="image/x-icon" class="h-25" href="/src/assets/images/favicon.ico" />
+		
+		<link rel="stylesheet" href="index.css" />
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	</head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light" id="home-navbar"> <a class="navbar-brand" href="index.html"
-      id="home-navbar-brand"> <img src="images/dgb-logo.png" alt="Logo" width="110" /> </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
-        class="navbar-toggler-icon"></span> </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-       
-        <li class="nav-item" style="font-size: 0.8rem;"> <a class="nav-link"
-            href="index.html#our-services">VERTICALS</a> 
-        </li>
-        <li class="nav-item our-leadership" style="font-size: 0.8rem;"> <a class="nav-link"
-          href="index.html#our-leadership">LEADERSHIP</a> </li>
-         
-        <li class="nav-item" style="font-size: 0.8rem;"> <a class="nav-link" href="index.html#our-clients">CLIENTS</a>
-        </li>
-       
-        
-        <li class="nav-item" style="font-size: 0.8rem;">
-          <div class="dropdown">
-            <a class="nav-link" style="font-size: 0.8rem;">PARTNERS</a>
-            <div class="dropdown-content">
-              <a href="rstudio.html">RStudio</a>
-              <a href="https://moves.rwth-aachen.de/" target="blank">RWTH</a>
-            </div>
-          </div>
-        </li>
-      
-        <li class="nav-item" style="font-size: 0.8rem;"> <a class="nav-link" href="Projects.html">PROJECTS</a> </li>
-        
-        <li class="nav-item" style="font-size: 0.8rem;"> <a class="nav-link" href="Academy.html">ACADEMY</a> </li>
-        <li class="nav-item" style="font-size: 0.8rem;"> <a class="nav-link" href="Careers.html">CAREERS</a> </li>
-        <li class="nav-item" style="font-size: 0.8rem;"> <a class="nav-link" href="Contact.html">CONTACT</a> </li>
-      </ul>
-    </div>
+
+	<nav
+	id="navbar"
+	class="navbar navbar-light bg-light navbar-expand-sm fixed-top"
+	style="transition: none; margin: 0; padding: 0; height: 7vh"
+  >
+	<div
+	  class="container-fluid d-flex align-items-center justify-content-between"
+	>
+	  <!-- Left Logo -->
+	  <a class="navbar-brand" href="https://www.dgbtek.com" target="_blank">
+		<img
+		  src="/src/assets/images/dgb-logo.png"
+		  alt="DGB Logo"
+		  style="height: 40px"
+		/>
+	  </a>
+	  <!-- Navbar Toggle Button for Mobile -->
+	  <button
+		class="navbar-toggler"
+		type="button"
+		data-bs-toggle="collapse"
+		data-bs-target="#navbarNav"
+		aria-controls="navbarNav"
+		aria-expanded="false"
+		aria-label="Toggle navigation"
+	  >
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+  
+	  <!-- Collapsible Menu -->
+	  <div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav ms-auto me-auto align-items-center">  <!--Added align-items-center-->
+			<li class="nav-item">
+			<a
+			  href="/index.html"
+			  class="nav-link"
+			  >About us</a
+			>
+		  </li>
+			<li class="nav-item">
+			<a
+			  href="/src/components/projects/projects.html"
+			  class="nav-link"
+			  >Projects</a
+			>
+		  </li>
+		  <li class="nav-item">
+			<a href="/src/components/join_us/join-us.html" class="nav-link"
+			  >Join us</a
+			>
+		  </li>
+		  <li class="nav-item">
+			<a
+			  href="/src/components/team/team.html"
+			  class="nav-link"
+			  >Team</a
+			>
+		  </li>
+		  <!-- <li class="nav-item"><a href="/src/components/collaborator/collaborator.html" class="nav-link">Clients</a></li> -->
+		  <li class="nav-item">
+			<a href="/src/components/contact_us/contact-us.html" class="nav-link"
+			  >Contact</a
+			>
+		  </li>
+		</ul>
+	  </div>
+  
+	  <!-- Right Logo -->
+	  <!-- <a class="navbar-brand" href="https://www.dgbtek.com" target="_blank">
+		<img
+		  src="/src/assets/images/dgb-logo.png"
+		  alt="DGB Logo"
+		  style="height: 40px"
+		/>
+	  </a> -->
+	</div>
   </nav>
 
-  <!--
-    <div id="large-header" class="large-header">
-      <canvas id="demo-canvas"></canvas>
-      <h1 class="main-title"><span class="thin">Explore</span> Space</h1>
-    </div>
--->
 
-  <header>
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2300">
-      <div class="carousel-inner text-center">
-        <div id="large-header" class="large-header">
-          <div class="carousel-item active">
-            <h1 class="main-title">IMPLEMENTING<br>
-              NEXT-GENERATION IDEAS</h1>
-          </div>
-          <canvas id="demo-canvas"></canvas>
-          <div class="overlay"></div>
-          <video autoplay muted loop id="maVideo">
-            <source src="videos/bg-video-5.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-     
-    </div>
-  </header>
-   
-  <section>
-    
-    <div class="header-border"></div>
-    
-    <div id="our-services" class="center container">
-
-      <div class="services-header">
-        <h3>Verticals</h3>
-        <div class="sm-divider-line"></div>
-
-       <div class="row" style="padding-left: 15px; padding-right: 15px;">
-
-        <p style="text-align: justify;" >
-          The key to serving any industry is understanding its needs, analyzing its
-          requirements and filling the gaps in between. Our broad range of expertise
-          enables us to develop comprehensive solutions for our clients.Through vast
-          research and rigorous development practices, DGB Technologies serves a
-          multitude of sectors.
-        </p>
-        
-       </div>
-
-        <div class="row">
-
-         
-
-          <div class="col-sm-4">
-            <img class="service-img" src="images/AI_new.jpg" />
-            <a id="verticals-link" href="Projects.html#AI"><h6>Artificial Intelligence / Machine Learning & Big Data Analysis<br>
-            </h6></a>
-
-            <p style="text-align: justify;">
-              Our AI engineers and data scientists are able to rapidly develop and operate big data, predictive
-              analytics, and AI /
-              ML models that show prove the business value to business stakeholders. Experts in multiple
-              AI
-              specialties including deep learning, computer vision, optimization and natural language processing , we
-              connect the
-              dots between business outcomes and AI.
-              <!-- <a href="Projects.html#AI">
-                <h6>DGB Case Studies</h6>
-              </a> -->
-            </p>
-          </div>
-           <div></div>
-          <div class="col-sm-4">
-            <img class="service-img" src="images/FV.jpg" />
-            <a id="verticals-link" href="Projects.html#FV"><h6>Formal Verification of Software/Hardware Systems
-            </h6></a>
-            <p style="text-align: justify;">
-              We have experience in advanced model checking and static analysis techniques that enables us to reason and
-              derive
-              facts about complex dynamical systems. We also have expertise in mathematical modeling of reactive,
-              stochastic and real-time
-              hybrid systems for verifying their trustworthiness aspects (such as safety, reliability, performance and
-              survivability).
-            </p>
-
-          </div>
-
-          <div class="col-sm-4">
-            <img class="service-img" src="images/Bio.jpg" />
-            <a id="verticals-link" href="#"><h6>Bioinformatics <br>
-            </h6></a>
-
-            <p style="text-align: justify;">
-              Our Researchers offer various bioinformatics software solutions with the goal to accelerate your research
-              and build
-              tools for research data management, data analysis, data storage and integration, data-mining and
-              biostatistics. Our
-              aim is to revolutionize the technology behind genomic data management and data analysis and become a
-              significant
-              contributor to biomarker discovery. 
-              <!-- <a href="Projects.html#AI">
-                <h6>DGB Case Studies</h6>
-              </a> -->
-            </p>
-
-          </div>
-
-
-        </div>
-
-      </div>
-    </div>
-    <!-- <div id="solutions-carousel" class="bd-example">
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="1500">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
-
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active"> <img src="images/projects-bg.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block"> <img src="images/RStudio.png" width="auto"
-                height="100px" />
-              <h5></h5>
-              <p>RStudio is an integrated development environment for R, a programming language
-                for statistical computing and graphics.</p>
-            </div>
-          </div>
-          <div class="carousel-item"> <img src="images/projects-bg.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block"> <img src="images/sparklyr.svg" height="100px" />
-              <h5></h5>
-              <p>
-                Sparklyr is an R interface to Apache Spark, a fast and general engine for big data processing.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item"> <img src="images/projects-bg.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block"> <img src="images/shiny.png" height="100px" />
-              <h5></h5>
-              <p>
-                Shiny makes it incredibly easy to build interactive web applications with R.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item"> <img src="images/projects-bg.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block"> <img src="images/dplyr.png" height="100px" />
-              <h5></h5>
-              <p>
-                Dplyr is the next iteration of plyr, focussing on only data frames. dplyr is faster and has a more
-                consistent API.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item"> <img src="images/projects-bg.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block"> <img src="images/ggplot2.png" height="100px" />
-              <h5></h5>
-              <p>
-                Ggplot 2 is an enhanced data visualization package for R. Create stunning multi-layered graphics with
-                ease.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item"> <img src="images/projects-bg.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block"> <img src="images/Storm.png" height="100px" />
-              <h5></h5>
-              <p>
-                Storm a model checker, is a tool for the analysis of systems involving random or probabilistic
-                phenomena. </p>
-            </div>
-          </div>
-          <div class="carousel-item"> <img src="images/projects-bg.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block"> <img src="images/prism.png" height="100px" />
-              <h5></h5>
-              <p>
-                PRISM is a probabilistic model checker, a tool for formal modelling and
-                analysis of systems that exhibit random or probabilistic behaviour. </p>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev"> <span
-            class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a
-          class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next"> <span
-            class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
-      </div>
-    </div> -->
-    <div id="our-leadership" class="center container">
-      <div class="services-header">
-        <h3>Leadership</h3>
-        <div class="sm-divider-line"></div>
-        <div class="row">
-          <div class="col-sm-4"> <img src="images/dr_falak_u.png" width="35%" />
-            <div id="module">
-            <h6 style="text-align: center;">Dr. Falak Sher</h6>
-            <p>Formal Methods Expert</p>
-            <p class="collapse" id="collapseExample1" aria-expanded="false" style="text-align: justify">Dr. Falak Sher earned his PhD in Software Modelling & Verification from RWTH
-              Aachen University, Germany. He also did his Post-doctoral research at Fortiss GmbH
-              institute of Germany. His areas of expertise include analysis of reactive, stochastic, real-time, and
-              hybrid systems, reduction techniques for probabilistic systems using game theory, formal software
-              verification,
-              formal modeling and analysis of distributed computing, game theory,
-              mathematical logic and automata theory.
-            </p>
-            <div style="text-align: right; margin-top: -10px;">
-            <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample"></a>
-            </div>
-          </div>
-          </div>
-          <!-- <div class="col-sm-4">
-           
-          </div> -->
-          <div class="col-sm-4"> <img src="images/aurang_zeb.png" width="35%" />
-            <div id="module">
-            <h6 style="text-align: center;">Aurang Zeb</h6>
-            <p>Risk Analysis Expert</p>
-            <p class="collapse" id="collapseExample2" aria-expanded="false" style="text-align: justify">Mr Aurang Zeb earned his BS from University of Engineering and Technology,
-              Pakistan. He has extensive work experience in multinational companies like Alcatel Lucent, Nokia and
-              Siemens Network, etc., and has handled multiple projects in the middle east and Pakistan.
-              His fields of expertise are project management, policy making and risk analysis. He is proficient in
-              scrum, project scheduling, monitoring progress,
-              strategic planning & analysis and business development.</p>
-              <div style="text-align: right; margin-top: -10px;">
-                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample"></a>
-                </div>
-              </div>
-          </div>
-          <div class="col-sm-4"> <img src="images/mazhar-javed.png" width="35%" />
-            <div id="module">
-            <h6 style="text-align: center;">Dr. Mazhar Javed Awan</h6>
-            <p>AI/ML Expert</p>
-            <p class="collapse" id="collapseExample3" aria-expanded="false" style="text-align: justify">Dr. Mazhar Javed Awan, Assistant Professor of the Software Engineering Department at the
-              University of Management &amp; Technology (UMT) Lahore. He has 18 years of experience in
-              various institutes. Besides these, He is a trainer, consultant, and curriculum member of
-              different academic, Government, and corporate sectors in the field of Artificial Intelligence. His
-              topic of P.h.D is related to medical Image detection from the Universiti Teknologi Malaysia
-              (UTM). As a researcher, he published more than 50 research papers in high-impact factor
-              journals and top conferences in artificial intelligence, Data Sciences, Big Data, Deep Learning,
-              Natural language processing, and Machine learning. His H-index in google scholar
-              is 21 with 1000 plus citations. He has been a peer reviewer for international journals, Roadmap,
-              and conferences. He received the Research Excellence Award for Highly Cited Paper from UMT.
-              He was an Invited Speaker and Judge of AI competitions in the well-renowned institutes
-              of Pakistan and Malaysia. He organized the International Conference of Computing and
-              Innovation (ICIC 2019,2021) as Publication Chair. He is also a member of the curriculum of the
-              National Vocational and Technical Training Commission (NAVTTC) Federal Government,
-              Technical Educational Vocational Training Authority (TEVTA), and IEEE Lahore Section Pakistan.</p>
-              <div style="text-align: right; margin-top: -10px;">
-                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample"></a>
-                </div>
-              </div>
-          </div>
-        </div>
-
-        <div class="row">
-
-          <div class="col-sm-4"> <img src="images/dr_waqas_u.png" width="35%" />
-            <div id="module">
-            <h6 style="text-align: center;">Dr. Waqas Sultani</h6>
-            <p>Computer Vision & ML Expert</p>
-            <p class="collapse" id="collapseExample4" aria-expanded="false" style="text-align: justify">Dr. Waqas Sultani completed his Ph.D. in Computer Science from University of
-              Central Florida. His area of expertise include computer vision and machine learning. He has worked on
-              several projects related to human action recognition, anomaly detection, crowd tracking, anomaly
-              detection,
-              object segmentation, complex event detection and automatic weakly labeled annotations. He has worked on
-              projects funded by US Intelligence Advanced Research Projects Activity.</p>
-              <div style="text-align: right; margin-top: -10px;">
-                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample"></a>
-                </div>
-              </div>
-          </div>
-
-          <div class="col-sm-4">
-           
-          </div>
-         
-
-          <div class="col-sm-4"> <img src="images/ali_tahir.png" width="35%" />
-            <div id="module">
-            <h6 style="text-align: center;">Dr. Ali Tahir</h6>
-            <p>Speech Processing & NLP Expert</p>
-            <p class="collapse" id="collapseExample5" aria-expanded="false" style="text-align: justify">Dr. Ali Tahir completed his Ph.D. in Automatic speech recognition from RWTH
-              Aachen University. In Germany he has worked on different projects related to speech
-              recognition, primarily aiming to bridge the language divide in a multilingual Europe. He has worked with
-              industry to create Urdu voice based solutions for conversational agents & vehicle navigation. He has also
-              launched an Urdu website UrduAsr which is being used by thousands of people for Urdu voice based typing.</p>
-              <div style="text-align: right; margin-top: -10px;">
-                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample"></a>
-                </div>
-              </div>
-          </div>
-         
-          
-          </div>
-          
-
-        </div>
-      </div>
-      <br><br>
-    </div>
-    <div id="our-leadership1" class="center container">
-      <div class="services-header">
-        <h3>Scientific Advisory Board</h3>
-        <div class="sm-divider-line"></div>
-
-        <div class="row">
-          <div class="col-sm-4"> <img src="images/katoen_u.png" width="35%" />
-            <div id="module">
-            <h6 style="text-align: center;">Joost-Pieter Katoen</h6>
-            <p>Software Modeling and Verification Expert</p>
-            <p class="collapse" id="collapseExample6" aria-expanded="false" style="text-align: justify">Joost-Pieter Katoen is a Dutch theoretical computer scientist based in
-              Germany. He is
-              distinguished professor in Computer Science and head of the Software Modeling and Verification Group at
-              RWTH Aachen
-              University. Furthermore, he is part-time associated to the Formal Methods & Tools group at the University
-              of Twente.
-              Katoen's main research interests are formal methods, computer aided verification, in particular model
-              checking,
-              concurrency theory, and semantics, in particular semantics of probabilistic programming languages. His
-              research is
-              largely tool and application oriented. Together with Christel Baier he wrote and published the book
-              Principles of Model Checking.
-            </p>
-            <div style="text-align: right; margin-top: -10px;">
-              <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample"></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4"> <img src="images/dr_emran_u.png" width="35%" />
-            <div id="module">
-            <h6 style="text-align: center;">Dr. Imran Khan</h6>
-            <p>Molecular Biotechnology Expert</p>
-            <p class="collapse" id="collapseExample7" aria-expanded="false" style="text-align: justify">Dr. Imran Khan received PhD
-              fellowship from German Academic and Exchange Service (DAAD) for his doctoral study at Institute for Molecular
-              Biotechnology, RWTH Aachen University, Germany. He also served Vienna Institute for Biotechnology, BOKU, Vienna,
-              Austria, as researcher where he investigated expression and targeting of recombinant proteins in plant tissues. He
-              also received research funding as PI and supervised PhD and master students working as Assistant Professor at Center
-              for Interdisciplinary Research, Islamabad, Pakistan. He completed his postdoctoral study from University of Bonn,
-              Germany that was also funded by DAAD, Germany. In 2019, Imran received Penn Biomedical Postdoctoral fellowship for
-              postdoctoral study at School of Dental Medicine at University of Pennsylvania, Philadelphia, USA, where he worked on
-              oral delivery of plant made biopharmaceuticals using Chloroplast production system, in collaboration with Takeda,
-              Japan. In 2021, he joined University of California, Davis, USA, as Project Scientist. He is currently working on
-              highly interdisciplinary project for development of platform technologies for bio-manufacturing on Mars to provide
-              food and pharmaceuticals for colonists, funded by National Aeronautics and Space Administration (NASA), USA.
-            </p>
-              <div style="text-align: right; margin-top: -10px;">
-                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample7" aria-expanded="false" aria-controls="collapseExample"></a>
-                </div>
-              </div>
-          </div>
-
-          <div class="col-sm-4"> <img src="images/marielle.png" width="35%" />
-            <div id="module">
-            <h6 style="text-align: center;">Prof. Dr. Marielle Stoelinga</h6>
-            <p>Software Modeling and Verification Expert</p>
-            <p class="collapse" id="collapseExample7a" aria-expanded="false" style="text-align: justify">
-                Marielle Stoelinga is a Dutch Professor in IT Risk Management at FMT group, University of Twente, and Dept. of Software Science, Radboud University, the Netherlands.
-She leads a research team that develops quantitative risk assessments methods: techniques to analyze, predict and improve the reliability of complex systems, e.g. via fault trees, model-based testing, and reliability modeling through stochastic model-checking. Predictive maintenance, human factors and the interplay between safety and security are her special interests.
-
-She is the programme leader of executive Master on Risk Management, and holds advisory roles at Schouten & Nelissen University of Applied Sciences, and Nyenrode University.
-
-She holds a prestigious ERC consolidator grant on the integration of Safety and Security risks. She leads a large national consortium on Predictive Maintenance, funded by the Dutch National Research Agenda NWA.
-
-            </p>   <div style="text-align: right; margin-top: -10px;">
-                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample7a" aria-expanded="false" aria-controls="collapseExample"></a>
-                </div>
-              </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-    <div id="our-leadership2" class="center container">
-      <div class="services-header">
-        <h3>Researchers & Consultants</h3>
-        <div class="sm-divider-line"></div>
-        <div class="row">
-
-          <div class="col-sm-4"> <img src="images/dr_agha_u.png" width="35%" />
-            <div id="module">
-            <h6 style="text-align: center;">Dr. Agha Ali Raza</h6>
-            <p>Speech Processing & NLP Expert</p>
-            <p class="collapse" id="collapseExample8" aria-expanded="false" style="text-align: justify">Mr. Agha Ali Raza is a Fulbright Scholar who has a PhD from the Language
-              Technologies
-              Institute, School of Computer Science at Carnegie Mellon University, Pittsburgh, USA.
-              His research interests include Speech-based Human Computer Interfaces, telephone-based automated dialog
-              systems,
-              Information & Communication Technologies for Development (ICT4D) and Natural Language Processing with a
-              focus on the use
-              of Speech & Language Technologies for Development.</p>
-              <div style="text-align: right; margin-top: -10px;">
-                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample8" aria-expanded="false" aria-controls="collapseExample"></a>
-                </div>
-              </div>
-          </div>
-
-          <div class="col-sm-4">
-          </div>
-
-          <div class="col-sm-4"> <img src="images/dr_ali_ahmad_u.png" width="35%" />
-            <div id="module">
-            <h6 style="text-align: center;">Dr. Ali Ahmed</h6>
-            <p>Signal/Image Processing & ML Expert</p>
-            <p class="collapse" id="collapseExample10" aria-expanded="false" style="text-align: justify">Dr. Ali Ahmed completed his PhD in electrical engineering from Georgia
-              Institute of Technology and his Postdoc from Brown University and Massachusetts Institute of Technology
-              (MIT). His research interests include compressive sensing, inverse problems in imaging,
-              sparse approximations, and applications of signal models in signal processing, and machine
-              learning. His research includes blind deconvolution problem in signal processing and communications.</p>
-              <div style="text-align: right; margin-top: -10px;">
-                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample10" aria-expanded="false" aria-controls="collapseExample"></a>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div class="row">
-
-          <div class="col-sm-4"> <img src="images/dr_arif_mehmood_u.png" width="35%" />
-            <div id="module">
-            <h6 style="text-align: center;">Dr. Arif Mahmood</h6>
-            <p>Image Processing & ML Expert</p>
-            <p class="collapse" id="collapseExample9" aria-expanded="false" style="text-align: justify">Dr. Arif Mahmood received his MS and PhD in Computer Science from the Lahore
-              University of Management Sciences (LUMS) and did post doctoral research at the College of Engineering in
-              Qatar University. His areas of expertise include image processing, pattern recognition, machine vision,
-              optimization, modeling and simulation.He has also worked on computation elimination algorithms for fast
-              template matching, video compression, object removal and image mosaicking.</p>
-              <div style="text-align: right; margin-top: -10px;">
-                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample9" aria-expanded="false" aria-controls="collapseExample"></a>
-                </div>
-              </div>
-          </div>
-          <div class="col-sm-4">
-          </div>
-          <div class="col-sm-4"> <img src="images/dr_mohsen_u.jpg" width="35%" />
-            <div id="module">
-            <h6 style="text-align: center;">Dr. Mohsen Ali</h6>
-            <p>Computer Vision & ML Expert</p>
-            <p class="collapse" id="collapseExample11" aria-expanded="false" style="text-align: justify">Dr. Mohsen Ali completed his Ph.D. from the Department of Computer and
-              Information Science and Engineering, the University
-              of Florida,USA.
-              His area of expertise lie in the areas of Computer Vision and Machine Learning, specifically Deep
-              Learning, on the problems related to image co-segmentation, remote sensing, medical imaging and affective
-              computing.
-              Some of the research problems he is pursuing are satellite/aerial imagery
-              analysis, affective computing and multi-image co-segmentation.</p>
-              <div style="text-align: right; margin-top: -10px;">
-                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample11" aria-expanded="false" aria-controls="collapseExample"></a>
-                </div>
-              </div>
-          </div>
-          
-         
-
-          
-        </div>
-      </div>
-
-    </div>
-    </div>
-    <div id="our-clients" class="center container">
-      <div class="services-header">
-        <h3>Clients & Collaboraters</h3>
-        <div class="sm-divider-line"></div>
-      </div>
-      <div class="row">
-  
-          <div class="container-fluid"> 
-            <img src="images/RStudio-Logo-Flat.png" width="180" 
-            class="rstudio-img" alt="RStudio"> 
-            <img src="images/client0.png" width="180"
-            class="ibm-img" alt="IBM"> 
-              <img src="images/wiseman-logo-color.png" width="200" 
-                class="wiseman-img" alt="WiseMine">  <img src="images/loop-today-logo.png"
-                class="loop-today-img" width="85"  alt="Loop Today"> 
-                <img src="images/jade-corp-logo-removebg-preview.png" width="140" style="margin-left:25px;"
-                class="jade-crop-img" alt="Jade Corp"> <img src="images/askari-removebg-preview.png"width="140" 
-                class="askari-img" alt="Jade Corp"> 
-              <img src="images/Mediks_logo-removebg-preview.png" width="70"  class="mediks-img" alt="Jade Corp">
-            </div>
-      </div>
-    </div>
-  
+	<section class="full-page-content">	
+		<div class="content-container">
+			<h1 class="main-heading">Implementing next-generation ideas</h1>
+			<h2 class="sub-heading">Probabilistic Verification, AI/Machine Learning, Data Analytics & Cloud Computing Services</h2>
+			<p class="body-text">
+				With specialized technologies and cutting-edge R&D assistance from a group of internationally recognized academics and scientists, DGB provides affordable solutions for complex problems that cannot be resolved conventionally.
+			</p>
+			<!-- <a href="#" class="btn-primary">Talk to our consultant →</a> -->
+		</div>
+	<div class="full-page-bg-image"></div>
+	</section>
+<!-- DGB PRODUCTS -->
+	<div class="container-fluid col-sm-12" style="background-color: rgb(13, 93, 184);">
+		<div class="row" style="margin-left: auto; margin-right: auto">
+			<div class="csi-body" >
+				<h3 style="text-align: center; color: white;">Our Probabilistic Verification Tools</h3>
+				<div class="divider-line-center"></div>
+			</div>
+		</div>
+	</div>
+   <section class="full-page-content-services">
+	<div class="services-container">
+		<div class="service-item">
+			<div class="service-heading-container">
+				<h2 class="service-heading">
+					SAFEST
+					 <a href="https://example.com/safest" target="_blank" class="service-icon-link">
+					  <span class="service-icon">🔗</span>
+				   </a>
+				</h2>
+			 </div>
+			<div class="service-details">
+			  <p class="service-text">
+				The SAFEST is a probabilistic risk assessment toolchain that is fully automatic, scalable, and state-of-the-art. It is based on dynamic fault trees (DFT) and event trees and, thus, can faithfully assess the risk of fail-operational/fault-tolerant dynamic systems with decision-making capabilities. It is equally competitive with existing commercial tools (for static fault trees analysis), but offers more flexible modeling and analyses, going beyond the capabilities of other tools, of dynamic systems as it covers all DFT gates.
+			</p>
+			</div>
+		</div>
+		 <div class="service-item">
+			<div class="service-heading-container">
+			  <h2 class="service-heading">
+				 SAFEST Enterprise
+				   <a href="https://example.com/safest" target="_blank" class="service-icon-link">
+					  <span class="service-icon">🔗</span>
+				   </a>
+			  </h2>
+			</div>
+			<div class="service-details">
+			   <p class="service-text">
+				  In large organisations where numerous teams work on separate PRA projects and exchange fault tree and event tree data, parameters, etc., the SAFEST enterprise version offers greater flexibility and ease of use thanks to its user management and data sharing modules.
+			  </p>
+			</div>
+		</div>
+		<div class="service-item">
+			<div class="service-heading-container">
+				<h2 class="service-heading">
+					StormGUI
+					 <span class="service-icon">🔗</span>
+				</h2>
+			</div>
+			 <div class="service-details">
+				  <p class="service-text">
+					It is a graphical editor of JANI modeling language that allows to create and edit automata in a “what you see is what you get” style. The editor offers tools to add locations and insert edges between them using drag & drop gestures. An automaton also needs to specify edge guards, rates, transition probabilities, data variable assignments and similar expressions. To this end, the editor uses constants, variables, expressions and functions that can conveniently be defined through a separate declaration module. The system composition module allows to create networks of multiple automata. In these networks, automata can synchronize using synchronization vectors, allowing, for example, the send-action of one automaton to synchronise with the receive-action of another one. The raw Jani format specifies labels and rewards through transient (“stateless”) variables. While this is a very flexible modeling approach, it can be cumbersome in some cases. The GUI therefore additionally provides a module to declare labels and rewards in a more user-friendly way. Finally, users familiar with the Jani specification can still inspect and edit the JSON-based Jani code on a textual level.
+				  </p>
+			 </div>
+		</div>
+		 <div class="service-item">
+			<div class="service-heading-container">
+				 <h2 class="service-heading">
+				  Hazardhive
+					<a href="https://example.com/hazardhive" target="_blank" class="service-icon-link">
+				   <span class="service-icon">🔗</span>
+					</a>
+				</h2>
+			</div>
+			<div class="service-details">
+				  <p class="service-text">
+					 Hazardhive is the most used risk assessment software that is based on the bowtie method. It enables you to easily create bowtie diagrams to assess risk. Hazardhive is unique in its ability to visualize complex risks in a way that is understandable, yet also allows for detailed risk-based improvement plans.
+				  </p>
+			  </div>
+		</div>
+	</div>
   </section>
 
+<!-- ML SERVICES --> 
+  <div class="container-fluid col-sm-12" style="background-color: rgb(13, 93, 184);">
+	<div class="row" style="margin-left: auto; margin-right: auto">
+		<div class="csi-body">
+			<h3 style="text-align: center; color: white;">Our ML Expertise</h3>
+			<div class="divider-line-center"></div>
+		</div>
+	</div>
+</div>
+
+  <section class="full-page-content-services">
+	<div class="services-container">
+		<div class="service-item">
+			<div class="service-heading-container">
+				<h2 class="service-heading">
+					Computer Vision
+				</h2>
+			 </div>
+			<div class="service-details">
+			  <p class="service-text">
+				 To assist clients stay ahead of the curve with the newest CV innovations, we develop deep learning architectures for a range of CV tasks, including object recognition, image classification, smart video analysis, and GANs.
+			</p>
+			</div>
+		</div>
+		 <div class="service-item">
+			<div class="service-heading-container">
+			  <h2 class="service-heading">
+				 Natural Language Processing & LLMs
+			  </h2>
+			</div>
+			<div class="service-details">
+			   <p class="service-text">
+				 We help machines comprehend and interpret human language as part of our machine learning development services. Our ML developers provide top-notch NLP solutions for chatbots, automatic text categorisation, sentiment analysis, speech recognition, translation, and more.
+			  </p>
+			</div>
+		</div>
+		<div class="service-item">
+			<div class="service-heading-container">
+				<h2 class="service-heading">
+					Data Mining
+				</h2>
+			</div>
+			 <div class="service-details">
+				  <p class="service-text">
+				   For data mining solutions, our machine learning development group creates unique machine learning algorithms that find correlations, trends, and anomalies in big datasets to provide insightful information. With our comprehensive suite of data management services, you may uncover new business opportunities and enable more informed decision-making.
+				  </p>
+			 </div>
+		</div>
+		 <div class="service-item">
+			<div class="service-heading-container">
+				 <h2 class="service-heading">
+				  Predictive Analytic
+				</h2>
+			</div>
+			<div class="service-details">
+				  <p class="service-text">
+					 We create both basic and sophisticated predictive models using machine learning and deep learning algorithms, allowing businesses to predict their business outcomes, such as asset maintenance, labour planning, churn analysis, competitive analysis, and risks.
+				  </p>
+			  </div>
+		</div>
+		<div class="service-item">
+			 <div class="service-heading-container">
+				 <h2 class="service-heading">
+					Intelligent Process Automation
+				  </h2>
+			 </div>
+			<div class="service-details">
+				 <p class="service-text">
+				  Custom IPA solutions that combine the power of data, machine learning, and automation are part of our machine learning development services. By incorporating deductive analytics and prediction into RPA systems, we simplify intelligent automation for any process.
+				  </p>
+			 </div>
+		 </div>
+	</div>
+  </section>
+  <!-- ML SERVICES -->
 
 
+
+<!-- industrial partners -->
+	<div class="container-fluid col-sm-12" style="background-color: rgb(13, 93, 184);">
+	<div class="row" style=" margin-left: auto; margin-right: auto">
+			<div class="csi-body">
+				<h3 style="text-align: center; color: white;">Industrial Partners</h3>
+				<div class="divider-line-center"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="my-5 content container-fluid col-sm-8">
+		<div class="col-sm-12 me-auto" >
+			<div class="col-sm-12 container-fluid" style="margin-left: 80px;">
+				<div class="row mt-5 justify-content-evenly">
+					<div class="col-sm-4">
+						<img src="./src/assets/images/edf.png" alt="" width="160px">
+					</div>
+					<div class="col-sm-4 mt-2">
+						<img src="./src/assets/images/proRail.png" alt="" width="160px">
+					</div>
+					<div class="col-sm-4">
+						<img src="./src/assets/images/movares.png" alt="" width="160px">
+					</div>
+					<div class="col-sm-4 mt-2">
+						<img src="./src/assets/images/thalesAlenia.png" alt="" width="160px">
+					</div>
+					<div class="col-sm-3 mt-4">
+						<img src="./src/assets/images/NS.png" alt="" width="120px">
+					</div>
+					<div class="col-sm-4">
+						<img src="./src/assets/images/BMW.png" alt="" width="160px">
+					</div>
+					<div class="col-sm-4">
+						<img src="./src/assets/images/SpaceSystemsFinland.png" alt="" width="160px">
+					</div>
+					<div class="col-sm-4">
+						<img src="/src/assets/images/bosch.png" alt="research-student" width="160px">
+					</div>
+					<div class="col-sm-4 mt-3">
+						<img src="./src/assets/images/airbus.png" alt="" width="160px">
+					</div>
+					<div class="col-sm-3 me-auto">
+						<img src="./src/assets/images/esa.png" alt="" width="140px">
+					</div>
+					<div class="col-sm-4">
+						<img src="./src/assets/images/saudi-aramco.png" alt="" width="160px">
+					</div>
+					<div class="col-sm-3 me-auto">
+						<img src="./src/assets/images/assystem-logo.png" alt="" width="160px">
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+<!-- industrial partners end here -->
+
+<!-- Academic partners -->
+<div class="container-fluid col-sm-12" style="background-color: rgb(13, 93, 184);">
+	<div class="row" style="margin-top: 40px; margin-left: auto; margin-right: auto">
+		<div class="csi-body">
+			<h3 style="text-align: center; color: white;">Academic Partners</h3>
+			<div class="divider-line-center"></div>
+		</div>
+	</div>
+</div>
+
+<div class="my-5 content container-fluid col-sm-8">
+	<div class="col-sm-12 me-auto" >
+		<div class="col-sm-12 container-fluid" style="margin-left: 80px;">
+			<div class="row mt-5 justify-content-evenly">
+				<div class="col-sm-4 mt-3">
+					<img src="./src/assets/images/logos/ut-logo.svg" style="object-fit: contain; background-color: black;" alt="" width="140px">
+				</div>
+				<div class="col-sm-4 mt-4">
+					<img src="./src/assets/images/aachen.png" alt="" width="160px">
+				</div>
+				<div class="col-sm-4">
+					<img src="./src/assets/images/logos/univ-eindhoven.png" alt="" width="150px">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Academic partners end here -->
+
+
+
+
+<!-- performance counters -->
+	<div class="content container-fluid col-sm-12">
+		<div class="col-sm-10 m-auto container-fluid">
+
+			<div class="row container-fluid col-sm-9 m-auto mt-5">
+				<div class="col-sm-3">
+					<div class="card" id="card">
+						<p style="color: rgb(84, 84, 84);"><i class="fa fa-user fa-4x"></i></p>
+						<h3>13+</h3>
+						<p>Partners</p>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="card " id="card">
+						<p style="color: green;"><i class="fa fa-check fa-4x"></i></p>
+						<h3>15+</h3>
+						<p>Projects</p>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="card " id="card">
+						<p style="color: rgb(215, 215, 60);"><i class="fa fa-smile-o fa-4x"></i></p>
+						<h3>4+</h3>
+						<p>Happy Clients</p>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="card " id="card">
+						<p style="color: rgb(84, 84, 84);"><i class="fa fa-coffee fa-4x"></i></p>
+						<h3>30+</h3>
+						<p>Meetings</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- performance counters end here -->
+
+
+<!-- Footer -->
+<footer class="mt-5 text-center text-lg-start bg-white text-muted">
+	<!-- Section: Social media -->
+	<section
+	  class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+	>
+	  <!-- Left -->
+	  <div class="me-5 d-none d-lg-block">
+		<!-- <span>Get connected with us on social networks</span> -->
+	  </div>
+	  <!-- Left -->
   
+	</section>
+	<!-- Section: Social media -->
   
-
-  <footer class="text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-5"> <img src="images/dgb-logo-w.png" class="footer-logo" width="150px"
-            style="padding-bottom: 8px;" />
-          <p>An independent technology research
-            company dedicated to implementing
-            next-generation ideas and inventing
-            solutions in niche technology areas.</p>
-            <p class="copyrights">© 2020 copyright all right reserved by DGB Technologies</p>
-        </div>
-        <div class="col-sm-2"></div>
-
-        <div class="col-sm-5">
-          <h5 style="text-align: left;">Contact us</h5>
-          <div class="footer-contact"> <img src="images/location-ic.png" width="20px" />
-            <div class="para">
-              <p>476 James Way Wyckoff,
-                New Jersey 07481, US </p>
-            </div>
-          </div>
-
-          <div class="footer-contact"> <img src="images/location-ic.png" width="20px" />
-            <div class="para">
-              <p>Keetman Str. 01, 47058 Duisburg, Germany</p>
-            </div>
-            </div>
-
-          <!-- <div class="footer-contact"> <img src="images/location-ic.png" width="20px" />
-            <div class="para">
-              <p>21 CC - 1st Floor, Commercial Area,
-                DHA, Phase 8, Ex Parkview, Lahore, PK </p>
-            </div>
-          </div> -->
-          <div class="footer-contact"> <img src="images/email-ic.png" width="20px" />
-            <div class="para">
-              <p>contact@dgbtek.com </p>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-
-      <div class="row">
-       
-      </div>
-    </div>
-
-    </div>
+	<!-- Section: Links  -->
+	<section class="">
+	  <div class="container text-center text-md-start mt-5">
+		<!-- Grid row -->
+		<div class="row mt-3">
+		  <!-- Grid column -->
+		  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+			<!-- Content -->
+			<img
+			  src="/src/assets/images/dgb-logo.png"
+			  width="150px"
+			  alt="Dgb-logo"
+			/>
+  
+			<p class="text-justify">
+			  An independent technology research company dedicated to implementing
+			  next-generation ideas and inventing solutions in niche technology
+			  areas.
+			</p>
+		  </div>
+		  <!-- Grid column -->
+  
+		  <!-- Grid column -->
+		  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+			<!-- Links -->
+			<h6 class="text-uppercase fw-bold mb-4">Projects</h6>
+			<p>
+			  <a href="https://www.hazardhive.dgbtek.com" class="text-reset"
+				>Hazardhive</a
+			  >
+			</p>
+			<p>
+			  <a href="https://www.storm.dgbtek.com" class="text-reset"
+				>StormGUI</a
+			  >
+			</p>
+			<p>
+			  <a href="https://www.safest.dgbtek.com" class="text-reset"
+				>SAFEST</a
+			  >
+			</p>
+		  </div>
+		  <!-- Grid column -->
+  
+		  <!-- Grid column -->
+		  <div class="col-md-2 col-lg-2 col-xl-2 px-0 mx-auto mb-4">
+			<!-- Links -->
+			<h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+			<p>
+			  <a
+				href="/src/components/installation/installation.html"
+				class="text-reset"
+				>Installation</a
+			  >
+			</p>
+			<p>
+			  <a
+				href="/src/components/documentations/dft-documentations.html"
+				class="text-reset"
+				>Resources</a
+			  >
+			</p>
+			<p>
+			  <a
+				href="/src/components/support/dft-support.html"
+				class="text-reset"
+				>Support</a
+			  >
+			</p>
+		  </div>
+		  <!-- Grid column -->
+  
+		  <!-- Grid column -->
+		  <div
+			class="col-md-5 col-lg-3 col-xl-3 mx-auto px-0 mb-md-0 mb-4"
+			style="width: 550px !important"
+		  >
+			<!-- Links -->
+			<h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+			<p>
+			  <img src="/src/assets/images/location.png" alt="" height="25px" />
+			  476 James Way, Wyckoff, New Jersey 07481, US <br />
+			  <img src="/src/assets/images/location.png" alt="" height="25px" />
+			  Keetman Str. 01, 47058 Duisburg, Germany <br />
+			  <img src="/src/assets/images/location.png" alt="" height="25px" />
+			  Unit2/5 Carlton Business Center, 104 Nechells Place Birmingham, UK
+			</p>
+            <p>
+				<a
+				  href="mailto:safest@dgbtek.com"
+				  class="text-reset"
+				  style="display: inline-block; margin-right: 10px;"
+				  ><img src="/src/assets/images/mail.png" alt="" height="20px" />
+				</a>
+				<a
+				href="https://github.com/DGBTechnologies/SAFEST/discussions"
+				class="text-reset"
+				 style="display: inline-block; margin-right: 10px;"
+				><img src="/src/assets/images/github.png" alt="" height="18px" />
+				</a>
+				<a
+				  href="https://www.linkedin.com/products/dgbtechnologies-safest-a-probabilistic-risk-assessment-toolchain/"
+				  class="text-reset"
+				   style="display: inline-block; margin-right: 10px;"
+				  ><img src="/src/assets/images/linkedin_.png" alt="" height="20px" />
+				</a>
+			  </p>
+		  </div>
+		  <!-- Grid column -->
+		</div>
+		<!-- Grid row -->
+	  </div>
+	</section>
+	<!-- Section: Links  -->
+  
+	<!-- Copyright -->
+	<div class="text-center p-4" >
+	  © 2025 Copyright:
+	  <a class="text-reset social" href="https://www.dgbtek.com/"
+		>DGB Technologies</a
+	  >
+	</div>
+	<!-- Copyright -->
   </footer>
-  <!--
-<script>
-   $.fakeLoader();
-</script>
--->
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+  <!-- Footer -->
 
 
 </body>
